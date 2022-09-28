@@ -27,12 +27,16 @@ body {
   grid-gap: 25%;
   list-style: none;
   padding-right: 10%;
-}
-
-a {
   text-decoration: none;
 }
 
-a:active {
+/* for noneactiv router */
+
+.link {
+  text-decoration: none;
+}
+
+/* for active one */
+.link-active {
   text-decoration: underline;
 }
