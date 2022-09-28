@@ -1,7 +1,5 @@
 import { createAsyncThunk } from '@reduxjs/toolkit';
 
-// const BOOK_ADDED = 'books/BOOK_ADDED';
-// const BOOK_REMOVED = 'books/REMOVE_BOOK';
 const DISPLAY_MISSION = 'mission/DISPLAY_BOOKS';
 const url = 'https://api.spacexdata.com/v3/missions';
 
