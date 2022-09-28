@@ -33,6 +33,7 @@ body {
 .link {
   text-decoration: none;
 }
+
 /* for active one */
 .link-active {
   text-decoration: underline;
