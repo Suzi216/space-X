@@ -29,10 +29,11 @@ body {
   padding-right: 10%;
 }
 
-a {
+/* for noneactiv router */
+.link {
   text-decoration: none;
 }
-
-a:active {
+/* for active one */
+.link-active {
   text-decoration: underline;
 }

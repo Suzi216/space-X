@@ -7,7 +7,7 @@ const Nav = () => {
   const links = [
     {
       id: 1,
-      path: '/',
+      path: '/Rocket',
       text: 'Rocket',
     },
     {
@@ -28,7 +28,7 @@ const Nav = () => {
         <h1 className="title">Space Travelers Hub</h1>
       </div>
       <ul className="navBar">
-        {links.map((link) => <li key={link.id}><NavLink to={link.path}>{link.text}</NavLink></li>)}
+        {links.map((link) => <li key={link.id}><NavLink className={({ isActive }) => (isActive ? 'link-active' : 'link')} to={link.path}>{link.text}</NavLink></li>)}
       </ul>
     </nav>
   );
