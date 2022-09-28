@@ -27,6 +27,7 @@ body {
   grid-gap: 25%;
   list-style: none;
   padding-right: 10%;
+  text-decoration: none;
 }
 
 /* for noneactiv router */
