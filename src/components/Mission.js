@@ -8,7 +8,6 @@ import './mission.css';
 const Mission = () => {
   const allmission = useSelector((state) => state.mission);
   const dispatch = useDispatch();
-  console.log(allmission);
   useEffect(() => {
     if (!allmission.length) dispatch(displayMission());
   }, []);

@@ -3,36 +3,43 @@ table {
   border-collapse: collapse;
   width: 100%;
 }
-.table-container{
+
+.table-container {
   margin: 2%;
 }
-td, th, table {
+
+td,
+th,
+table {
   border: 1px solid #989898;
   text-align: left;
   padding: 10px;
 }
 
 tr:nth-child(even) {
-  background-color: #F0F0F0;
+  background-color: #f0f0f0;
 }
-.member{
+
+.member {
   position: absolute;
-  background-color:	#707070;
+  background-color: #707070;
   color: #fff;
-  border:none;
+  border: none;
   margin-left: 5px;
-  border-radius:10px;
+  border-radius: 10px;
 }
-.button-container{
+
+.button-container {
   width: 120px;
   padding: 2px;
 }
 
-.button-container1{
+.button-container1 {
   width: 100px;
   padding: 2px;
 }
-.join{
+
+.join {
   padding: 8px;
   margin-left: 5px;
   border: solid 1px;
