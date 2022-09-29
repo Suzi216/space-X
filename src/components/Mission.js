@@ -8,15 +8,12 @@ const Mission = () => {
   const dispatch = useDispatch();
 
   const clickHandler = (id, join) => {
-    console.log(id);
-    console.log(join);
     if (join === false || join === undefined) {
       dispatch(joinmission(id));
     } else {
       dispatch(leavemission(id));
     }
   };
-  console.log(allmission);
   useEffect(() => {
     if (!allmission.length) dispatch(displayMission());
   }, []);
