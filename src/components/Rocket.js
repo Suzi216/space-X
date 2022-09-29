@@ -15,7 +15,7 @@ const Rockets = () => {
       <ul className="list-of-rockets">
         {rockets.map((rocket) => (
           <li key={rocket.id} className="each-rocket">
-            <img src={rocket.flickr_images[0]} height={140} alt="rockets-images" className="img-rocket" />
+            <img src={rocket.flickr_images[0]} alt="rockets-images" className="img-rocket" />
             <div className="rocket-rockets">
               <h3>{rocket.rocket_name}</h3>
               <p>{rocket.type}</p>
