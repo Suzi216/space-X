@@ -21,3 +21,16 @@ body {
   height: 190px;
   padding: 1rem;
 }
+
+.rocket-btn {
+  padding: 10px;
+  background-color: #00b4d8;
+  color: white;
+  border-radius: 3px;
+  border: none;
+  cursor: pointer;
+}
+
+.hide {
+  display: none;
+}
