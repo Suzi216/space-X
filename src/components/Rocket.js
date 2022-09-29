@@ -27,8 +27,10 @@ const Rockets = () => {
             <div className="rocket-rockets">
               <h3>{rocket.rocket_name}</h3>
               <p>{rocket.type}</p>
-              <button type="button" className={`reservation ${rocket.reserved ? '' : 'hide'}`}>Reserved</button>
-              <p>{rocket.description}</p>
+              <p>
+                <button type="button" className={`reservation ${rocket.reserved ? '' : 'hide'}`}>Reserved</button>
+                {rocket.description}
+              </p>
               <button type="button" className={`rocket-btn ${rocket.reserved ? 'hide' : ''}`} onClick={() => handleReserve(rocket.id)}>Reserve Rocket</button>
               <button type="button" className={`cancel-btn ${rocket.reserved ? '' : 'hide'}`} onClick={() => handleCancel(rocket.id)}>Cancel Reservation</button>
             </div>
