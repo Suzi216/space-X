@@ -1,6 +1,6 @@
 import { combineReducers, configureStore } from '@reduxjs/toolkit';
-import MissionReducer from './mission/mission';
 import thunk from 'redux-thunk';
+import MissionReducer from './mission/mission';
 import rocketsReducer from './rockets/Rockets';
 
 const mainReducer = combineReducers({
