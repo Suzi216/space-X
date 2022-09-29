@@ -1,0 +1,56 @@
+body {
+  font-family: "poppins", sans-serif;
+  padding: 0;
+  margin: 0;
+  background: #f7f7f9;
+}
+
+.list-of-rockets {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+
+.each-rocket {
+  display: flex;
+  gap: 3rem;
+}
+
+.each-rocket img {
+  width: 200px;
+  height: 190px;
+  padding: 1rem;
+}
+
+.rocket-btn {
+  padding: 10px;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  background-color: #017bff;
+  cursor: pointer;
+}
+
+.cancel-btn {
+  padding: 10px;
+  border-radius: 3px;
+  color: #6d757d;
+  font-weight: 600;
+  border: solid 2px #6d757d;
+  background-color: white;
+  cursor: pointer;
+}
+
+.reservation {
+  color: white;
+  padding: 4px;
+  margin-right: 4px;
+  background-color: #18a2b9;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.hide {
+  display: none;
+}
