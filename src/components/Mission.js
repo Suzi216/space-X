@@ -1,13 +1,19 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-// import Missiontable from './Missiontable';
-// import Bookform from './Bookform';
-import { displayMission } from '../redux/mission/mission';
+import { displayMission, joinmission, leavemission } from '../redux/mission/mission';
 import './mission.css';
 
 const Mission = () => {
   const allmission = useSelector((state) => state.mission);
   const dispatch = useDispatch();
+
+  const clickHandler = (id, join) => {
+    if (join === false || join === undefined) {
+      dispatch(joinmission(id));
+    } else {
+      dispatch(leavemission(id));
+    }
+  };
   useEffect(() => {
     if (!allmission.length) dispatch(displayMission());
   }, []);
@@ -26,10 +32,11 @@ const Mission = () => {
             <td>{mission.mission_name}</td>
             <td>{mission.description}</td>
             <td className="button-container">
-              <button type="button" className="member">NOT A MEMBER</button>
+              <button type="button" className={mission.join ? 'memberac' : 'member'}>{mission.join ? 'ACTIVE MEMBER' : 'NOT A MEMBER '}</button>
             </td>
+
             <td className="button-container1">
-              <button type="button" className="join">Join Mission</button>
+              <button id={mission.mission_id} onClick={() => clickHandler(mission.mission_id, mission.join)} type="button" className={mission.join ? 'joinac' : 'join'}>{mission.join ? 'Leave Mission' : 'Join Mission'}</button>
             </td>
 
           </tr>
