@@ -7,13 +7,6 @@ const Mission = () => {
   const allmission = useSelector((state) => state.mission);
   const dispatch = useDispatch();
 
-  // const joinMission = (e) => {
-  //   dispatch(joinmission(e.target.id));
-  // };
-  // const leaveMission = (e) => {
-  //   dispatch(leavemission(e.target.id));
-  // };
-
   const clickHandler = (id, join) => {
     console.log(id);
     console.log(join);
@@ -42,11 +35,11 @@ const Mission = () => {
             <td>{mission.mission_name}</td>
             <td>{mission.description}</td>
             <td className="button-container">
-              <button type="button" className="member">NOT A MEMBER</button>
+              <button type="button" className={mission.join ? 'memberac' : 'member'}>{mission.join ? 'ACTIVE MEMBER' : 'NOT A MEMBER '}</button>
             </td>
 
             <td className="button-container1">
-              <button id={mission.mission_id} onClick={() => clickHandler(mission.mission_id, mission.join)} type="button" className="join">Join Mission</button>
+              <button id={mission.mission_id} onClick={() => clickHandler(mission.mission_id, mission.join)} type="button" className={mission.join ? 'joinac' : 'join'}>{mission.join ? 'Leave Mission' : 'Join Mission'}</button>
             </td>
 
           </tr>
