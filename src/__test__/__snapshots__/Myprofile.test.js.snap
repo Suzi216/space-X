@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="our-profile"
+>
+  <div>
+    <table
+      className="mission_table"
+    >
+      <tr>
+        <th>
+          My Missions
+        </th>
+      </tr>
+    </table>
+  </div>
+  <div>
+    <table
+      className="rocket_table"
+    >
+      <tr>
+        <th>
+          My Rockets
+        </th>
+      </tr>
+    </table>
+  </div>
+</div>
+`;
