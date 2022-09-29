@@ -44,10 +44,12 @@ body {
 .reservation {
   border-radius: 3px;
   color: white;
-  padding: 8px;
+  padding: 3px;
+  margin-right: 4px;
   background-color: #017bff;
   border: none;
   cursor: pointer;
+  border-radius: 10px;
 }
 
 .hide {
