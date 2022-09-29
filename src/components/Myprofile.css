@@ -1,4 +1,11 @@
-.mission_table {
+.our-profile {
+  display: flex;
+  margin-top: 10px;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.our-profile div {
   width: 50%;
   margin: 5%;
 }
