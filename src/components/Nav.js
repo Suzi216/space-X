@@ -1,36 +1,40 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import Planet from '../images/planet.png';
 import './Nav.css';
 
 const Nav = () => {
-  const links = [
-    {
-      id: 1,
-      path: '/Rocket',
-      text: 'Rocket',
-    },
-    {
-      id: 2,
-      path: '/mission',
-      text: 'Mission',
-    },
-    {
-      id: 3,
-      path: '/myprofile',
-      text: 'Myprofile',
-    },
-  ];
+  // assigning location variable
+  const location = useLocation();
+
+  // destructuring pathname from location
+  const { pathname } = location;
+
+  // Javascript split method to get the name of the path in array
+  const splitLocation = pathname.split('/');
   return (
-    <nav className="navig-container">
-      <div className="logo-header">
-        <img alt="logo" className="image" src={Planet} />
-        <h1 className="title">Space Travelers Hub</h1>
+
+    <>
+      <div className="navig-container">
+        <div className="logo-header">
+          <img alt="logo" className="image" src={Planet} />
+          <h1 className="title">Space Travelers Hub</h1>
+        </div>
+        <ul>
+          {/* Checking the current path name using javascript ternary
+                    operator and if true adding active classname to it */}
+          <li className={splitLocation[1] === '' ? 'active' : ''}>
+            <Link to="/">Rockets</Link>
+          </li>
+          <li className={splitLocation[1] === 'mission' ? 'active' : ''}>
+            <Link to="/mission">Mission</Link>
+          </li>
+          <li className={splitLocation[1] === 'myprofile' ? 'active' : ''}>
+            <Link to="/myprofile">Profile</Link>
+          </li>
+        </ul>
       </div>
-      <ul className="navBar">
-        {links.map((link) => <li key={link.id}><NavLink className={({ isActive }) => (isActive ? 'link-active' : 'link')} to={link.path}>{link.text}</NavLink></li>)}
-      </ul>
-    </nav>
+    </>
   );
 };
 export default Nav;

@@ -1,0 +1,23 @@
+body {
+  font-family: "poppins", sans-serif;
+  background: #f7f7f9;
+  padding: 0;
+  margin: 0;
+}
+
+.list-of-rockets {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+
+.each-rocket {
+  display: flex;
+  gap: 3rem;
+}
+
+.each-rocket img {
+  width: 200px;
+  height: 190px;
+  padding: 1rem;
+}

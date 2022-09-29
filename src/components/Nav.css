@@ -27,14 +27,27 @@ body {
   grid-gap: 25%;
   list-style: none;
   padding-right: 10%;
-}
-
-/* for noneactiv router */
-.link {
   text-decoration: none;
 }
 
-/* for active one */
-.link-active {
+/* for noneactiv router */
+
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+ul li a {
+  text-decoration: none;
+  padding: 10px 20px;
+  font-weight: bold;
+}
+
+.active {
+  text-decoration: underline;
+}
+
+.active a {
   text-decoration: underline;
 }
