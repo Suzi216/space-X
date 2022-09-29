@@ -31,11 +31,23 @@ body {
 }
 
 /* for noneactiv router */
-.link {
-  text-decoration: none;
+
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
 }
 
-/* for active one */
-.link-active {
+ul li a {
+  text-decoration: none;
+  padding: 10px 20px;
+  font-weight: bold;
+}
+
+.active {
+  text-decoration: underline;
+}
+
+.active a {
   text-decoration: underline;
 }
