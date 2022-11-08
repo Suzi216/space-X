@@ -15,7 +15,7 @@
 
 ## Live Demo 
 
-![Coming Soon]()
+![Live demo](https://suzi216.github.io/space-X/)
 
 
 ## Getting Started
